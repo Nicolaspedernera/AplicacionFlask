@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-sm-12 col-xs-12 pt-5">
+            <div class="card border-0 p-3 shadow-sm text-center">
+                <h3 class="text-muted">El Tiempo Actual de {{city}}, {{country}} : </h3>
+                <h5 class="lead text-muted">Temperatura de: {{ temp }}°C <img src="http://openweathermap.org/img/w/{{iconweather}}.png" alt="iconweather"></h5>
+                <h5 class="lead text-muted">Humedad: {{ humidity }} % </h5>
+                <h5 class="lead text-muted">Velocidad del viento: {{ wind_speed}} km/h</h5>
+                </div>
+        </div>
+
+    </div>
+{% endblock content %}  
+   
